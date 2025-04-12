@@ -1,16 +1,31 @@
 {
-  "name": "cordsid-message",
+  "name": "drocsid-message",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A library for creating and verifying signed messages",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "crypto",
+    "message",
+    "signing",
+    "verification"
+  ],
+  "author": "drocsidai",
   "license": "ISC",
   "dependencies": {
     "bs58": "^6.0.0",
     "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.86",
+    "typescript": "^5.8.3"
   }
 }
