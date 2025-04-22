@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --require ts-node/register tests/**/*.ts",
     "build": "tsc",
     "prepublishOnly": "npm run build"
   },
@@ -25,7 +25,13 @@
     "tweetnacl": "^1.0.3"
   },
   "devDependencies": {
+    "@solana/web3.js": "^1.98.0",
+    "@types/chai": "^5.2.1",
+    "@types/mocha": "^10.0.10",
     "@types/node": "^18.19.86",
+    "chai": "^4.3.10",
+    "mocha": "^11.1.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
 }
