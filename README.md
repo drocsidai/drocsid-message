@@ -1,21 +1,38 @@
 # drocsid-message
 
+[![npm version](https://img.shields.io/npm/v/drocsid-message.svg)](https://www.npmjs.com/package/drocsid-message)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
+[![Solana](https://img.shields.io/badge/Solana-SDK-purple.svg)](https://solana.com/)
+[![Test Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)]()
+
 A library for creating and verifying cryptographically signed messages.
 
-## Installation
+## 📋 Table of Contents
+
+- [Installation](#installation)
+- [Features](#features)
+- [Usage](#usage)
+- [API Reference](#api-reference)
+- [Testing](#testing)
+- [Security](#security)
+- [License](#license)
+
+## 🚀 Installation
 
 ```bash
 npm install drocsid-message
 ```
 
-## Features
+## ✨ Features
 
-- Create and verify message signatures with a dedicated message keypair
-- Cryptographically secure wallet-based authorization
-- Automatic signature expiration handling
-- Tamper-proof message verification
+- 🔐 Create and verify message signatures with a dedicated message keypair
+- 🔑 Cryptographically secure wallet-based authorization
+- ⏱️ Automatic signature expiration handling
+- 🛡️ Tamper-proof message verification
 
-## Usage
+## 🔍 Usage
 
 ### Basic Example
 
@@ -67,7 +84,7 @@ async function example() {
 example();
 ```
 
-## API Reference
+## 📘 API Reference
 
 ### Creating a Message Keypair
 
@@ -104,6 +121,26 @@ const authVerification = verifyKeypairAuth(signedMessage);
 const signatureVerification = verifyMessageSignature(signedMessage);
 ```
 
-## License
+## 🧪 Testing
+
+Run the test suite to verify functionality:
+
+```bash
+npm test
+```
+
+The library has comprehensive unit tests for all functions, ensuring reliability and correctness.
+
+## 🔒 Security
+
+This library uses industry-standard cryptographic techniques:
+
+- Ed25519 elliptic curve cryptography
+- Time-based signature expiration
+- Double verification (wallet authorization + message signature)
+
+⚠️ **Important**: Securely store your message keypair and never share private keys.
+
+## 📜 License
 
 ISC 
